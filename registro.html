@@ -1,0 +1,41 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - UAM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="registro.html">Registro</a>
+  </nav>
+
+  <h1>Registro a Conferencias</h1>
+
+  <form id="registroForm">
+    <label>Nombre completo:
+      <input type="text" name="nombre" required>
+    </label>
+
+    <label>Correo institucional:
+      <input type="email" name="correo" required>
+    </label>
+
+    <label>Carrera:
+      <input type="text" name="carrera" required>
+    </label>
+
+    <fieldset>
+      <legend>Conferencias</legend>
+      <label><input type="checkbox" name="conferencias" value="GitHub"> Uso de GitHub</label><br>
+      <label><input type="checkbox" name="conferencias" value="Docker"> Introducción a Docker</label><br>
+      <label><input type="checkbox" name="conferencias" value="Linux"> Configuración básica de Linux</label>
+    </fieldset>
+
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+</html>
